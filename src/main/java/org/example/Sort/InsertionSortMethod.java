@@ -2,7 +2,11 @@ package org.example.Sort;
 
 import java.util.function.Consumer;
 
+<<<<<<< refs/remotes/origin/GUISorts
 public class InsertionSortMethod implements Consumer {
+=======
+public class InsertionSortMethod implements Consumer, SortInterface {
+>>>>>>> Add sort code
     public void sort(int[] array) {
         int in, out, temp;
 

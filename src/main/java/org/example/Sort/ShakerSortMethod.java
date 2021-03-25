@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+<<<<<<< refs/remotes/origin/GUISorts
 public class ShakerSortMethod implements Consumer {
+=======
+public class ShakerSortMethod implements Consumer, SortInterface {
+>>>>>>> Add sort code
     public void sort(int[] array) {
         int left = 0; // левая граница
         int right = array.length - 1; // правая граница

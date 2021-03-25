@@ -2,7 +2,11 @@ package org.example.Sort;
 
 import java.util.function.Consumer;
 
+<<<<<<< refs/remotes/origin/GUISorts
 public class CombSortMethod implements Consumer {
+=======
+public class CombSortMethod implements Consumer, SortInterface {
+>>>>>>> Add sort code
 
     public void sort(int[] array) {
         int step = (int) (array.length / 1.247);
