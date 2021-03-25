@@ -22,6 +22,10 @@ public class Test {
         return array;
     }
 
+    public List<Long> getTimeRes() {
+        return timeRes;
+    }
+
     public void printArray(){
         for (int ii : array) System.out.print(ii + " ");
     }
