@@ -14,15 +14,18 @@ public class TestClass {
 
     private static void testSort(){
         ShakerSortMethod s = new ShakerSortMethod();
-        Test t = new Test(100);
-        t.printArray();
+        Test t = new Test(10000);
+        //t.printArray();
         System.out.println();
         System.out.println();
         System.out.println();
 
         t.startSort(10, new QuickSortMethod());
 
-        t.printArray();
+       // t.printArray();
+        System.out.println();
+        var a = t.getTimeRes();
+        System.out.println(a);
     }
 
     private static void testSearch(){

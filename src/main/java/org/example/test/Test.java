@@ -18,7 +18,7 @@ public class Test {
         array = new int[100];
     }
     public Test(int size){
-        array = new int[100];
+        array = new int[size];
         initArray();
     }
 
