@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+   <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: FFA500;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <ComboBox fx:id="SortMethodChoose" layoutX="14.0" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="26.0" prefWidth="206.0" promptText="Выберите метод сортировки" />
+                  <Button fx:id="StartButton" layoutX="227.0" layoutY="7.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" mnemonicParsing="false" text="Старт" />
+                  <Button fx:id="DrawGrafButton" layoutX="280.0" layoutY="7.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" mnemonicParsing="false" text="Построить график" />
+                  <Button fx:id="AboutButton" layoutX="487.0" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="О программе" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="37.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="0.0" prefHeight="362.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <LineChart fx:id="Graf" layoutX="-2.0" layoutY="-3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="352.0" prefWidth="588.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
