@@ -14,7 +14,7 @@ public class Test {
         array = new int[100];
     }
     public Test(int size){
-        array = new int[100];
+        array = new int[size];
         initArray();
     }
 
@@ -39,7 +39,6 @@ public class Test {
     }
 
     public void StartSort(int repeat, Consumer<int[]> sort){
-
         for(int i=0; i<repeat; i++){
             initArray();
 
