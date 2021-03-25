@@ -2,15 +2,8 @@ package org.example.Sort;
 
 import java.util.function.Consumer;
 
-<<<<<<< HEAD
-<<<<<<< refs/remotes/origin/GUISorts
 public class QuickSortMethod implements Consumer {
-=======
-public class QuickSortMethod implements Consumer, SortInterface {
->>>>>>> Add sort code
-=======
-public class QuickSortMethod implements Consumer, SortInterface {
->>>>>>> meogol
+
     public void sort(int[] array) {
         int n = array.length;
         for (int i = 0; i < n; i ++) {
