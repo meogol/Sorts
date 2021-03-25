@@ -10,7 +10,7 @@ public class Test {
     int[] array;
     List<Long> timeRes = new ArrayList<>();
 
-    Test(){
+    public Test(){
         array = new int[100];
     }
     public Test(int size){
