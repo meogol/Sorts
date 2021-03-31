@@ -2,7 +2,7 @@ package org.example.Sort;
 
 import java.util.function.Consumer;
 
-public class InsertionSortMethod implements Consumer, SortInterface {
+public class InsertionSortMethod implements Consumer {
     public void sort(int[] array) {
         int in, out, temp;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-public class ShakerSortMethod implements Consumer, SortInterface {
+public class ShakerSortMethod implements Consumer {
     public void sort(int[] array) {
         int left = 0; // левая граница
         int right = array.length - 1; // правая граница
