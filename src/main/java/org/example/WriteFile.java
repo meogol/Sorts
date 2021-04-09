@@ -10,19 +10,19 @@ public class WriteFile {
 
     public static void main(String[] args) {
 
-        test.StartSort(1000, new CombSortMethod());
+        test.startSort(1000, new CombSortMethod());
         writeFile("CombSortMethod");
 
-        test.StartSort(1000, new InsertionSortMethod());
+        test.startSort(1000, new InsertionSortMethod());
         writeFile("InsertionSortMethod");
 
-        test.StartSort(1000, new QuickSortMethod());
+        test.startSort(1000, new QuickSortMethod());
         writeFile("QuickSortMethod");
 
-        test.StartSort(1000, new ShakerSortMethod());
+        test.startSort(1000, new ShakerSortMethod());
         writeFile("ShakerSortMethod");
 
-        test.StartSort(1000, new ShellSortMethod());
+        test.startSort(1000, new ShellSortMethod());
         writeFile("ShellSortMethod");
 
 
