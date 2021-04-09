@@ -98,30 +98,34 @@ public class Test {
 
     private void createNode(Node node, int count){
         var rand = new Random();
-
-        switch (rand.nextInt(3)) {
-            case 0:{
+        var a = rand.nextInt(3);
+        switch (a) {
+            case 0:
                 node.setLeft(new Node(rand.nextInt()));
                 count++;
                 if(count< array.length)
                     createNode(node.getLeft(), count);
-            }
-            case 1:{
+                return;
+
+            case 1:
                 node.setRight(new Node(rand.nextInt()));
                 count++;
                 if(count< array.length)
                     createNode(node.getRight(), count);
+                return;
 
-            }
-            case 2:{
+
+            case 2:
                 node.setRight(new Node(rand.nextInt()));
                 node.setLeft(new Node(rand.nextInt()));
-                count++;
 
                 if(count< array.length) {
-                    createNode(node.getLeft(), count);
-                    createNode(node.getRight(), count);
-                }
+                    count++;
+                    createNode(node.getLeft(), count+10);
+
+                    count++;
+                    createNode(node.getRight(), count+10);
+                return;
 
             }
         }

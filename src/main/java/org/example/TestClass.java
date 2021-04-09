@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.Search.*;
 import org.example.Sort.*;
+import org.example.Tree.InOrder;
+import org.example.Tree.MorrisOrder;
 import org.example.Tree.PostOrder;
 import org.example.test.Test;
 
@@ -36,12 +38,12 @@ public class TestClass {
     }
 
     private static void testOrder(){
-        Test t = new Test(100);
+        Test t = new Test(200);
         System.out.println();
         System.out.println();
         System.out.println();
 
-        var a =new PostOrder();
+        var a =new MorrisOrder();
         t.startOrder(1, a);
 
     }
