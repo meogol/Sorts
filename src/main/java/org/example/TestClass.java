@@ -23,16 +23,11 @@ public class TestClass {
         t.startSort(10, new QuickSortMethod());
 
        // t.printArray();
-        System.out.println();
         var a = t.getTimeRes();
-        System.out.println(a);
     }
 
     private static void testSearch(){
         Test t = new Test(1000);
-        System.out.println();
-        System.out.println();
-        System.out.println();
 
         var a =new BMHSearch();
         t.startSearch(10, a);
@@ -42,9 +37,6 @@ public class TestClass {
 
     private static void testOrder(){
         Test t = new Test(200);
-        System.out.println();
-        System.out.println();
-        System.out.println();
 
         var a =new MorrisOrder();
         t.startOrder(1, a);

@@ -63,7 +63,7 @@ public class Test {
         String eng = "abcdefghijklmnopqrstuvwxyz";
 
         var str = "";
-        for(int i=0; i<size; i++){
+        for(int i=0; i<size/(float)(r.nextInt(200)/100); i++){
             char c = eng.charAt(r.nextInt(eng.length()));
 
             str += c;
@@ -73,11 +73,11 @@ public class Test {
     }
 
     public void startSearch(int repeat, ISearch search){
-
+        timeRes.clear();
 
         for(int i=0; i<repeat; i++){
             str = createStr(array.length);
-            String findStr = str.substring(60,63);
+            String findStr = str.substring(60,62);
 
             long start = System.currentTimeMillis();
             search.accept(str, findStr);
@@ -121,10 +121,10 @@ public class Test {
 
                 if(count< array.length) {
                     count++;
-                    createNode(node.getLeft(), count+10);
+                    createNode(node.getLeft(), count+50);
 
                     count++;
-                    createNode(node.getRight(), count+10);
+                    createNode(node.getRight(), count+50);
                 return;
 
             }
@@ -132,6 +132,8 @@ public class Test {
     }
 
     public void startOrder(int repeat, ITree search){
+        timeRes.clear();
+
         for(int i=0; i<repeat; i++){
             var testData = createTree();
 
@@ -141,7 +143,6 @@ public class Test {
 
             timeRes.add(finish-start);
 
-            for (var a: search.getArr()) System.out.println(a + " ");
         }
     }
 
